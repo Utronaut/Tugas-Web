@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 600px; /* Set max width for form */
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        .form-heading {
+            margin-bottom: 30px;
+            font-weight: bold; /* Make heading bold */
+            font-size: 2.5rem; /* Increase font size */
+            text-align: center; /* Center align the heading */
+            color: #ffffff; /* White text color */
+            background: linear-gradient(90deg, #007bff, #6610f2); /* Gradient background */
+            padding: 20px; /* Padding for space around the text */
+            border-radius: 8px; /* Rounded corners */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Custom primary color */
+            border: none; /* Remove border */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .form-group label {
+            font-weight: bold; /* Bold labels for better visibility */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="form-heading">Register</h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">Nama Depan</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Isi disini" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Nama Belakang</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Isi disini" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Isi disini" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select class="form-control" id="gender" required>
+                    <option value="" disabled selected>Pilih...</option>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" class="form-control" id="address" placeholder="Isi disini" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Isi disini" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password" required>
+            </div>
+            <div class="form-group">
+                <label for="profilePhoto">Upload Foto Profil</label>
+                <input type="file" class="form-control-file" id="profilePhoto">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

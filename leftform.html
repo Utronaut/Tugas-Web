@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Form (Normal)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            border-right: 0; /* Remove right border from th (label cells) */
+        }
+        td {
+            border-left: 0; /* Remove left border from td (input cells) */
+        }
+        input, textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Register</h3>
+    <form>
+        <table>
+            <tr>
+                <th>Nama Depan :</th>
+                <td><input type="text" placeholder="isi disini"></td>
+            </tr>
+            <tr>
+                <th>Nama Belakang :</th>
+                <td><input type="text" placeholder="isi disini"></td>
+            </tr>
+            <tr>
+                <th>Email :</th>
+                <td><input type="email" placeholder="isi disini"></td>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin :</th>
+                <td>
+                    <select>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir :</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Alamat :</th>
+                <td><input type="text" placeholder="isi disini"></td>
+            </tr>
+            <tr>
+                <th>Username :</th>
+                <td><input type="text" placeholder="isi disini"></td>
+            </tr>
+            <tr>
+                <th>Password :</th>
+                <td><input type="password" placeholder="masukkan password"></td>
+            </tr>
+            <tr>
+                <th>Upload Foto Profil </th>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="submit" value="Kirim"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
